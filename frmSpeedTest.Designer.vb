@@ -56,16 +56,16 @@ Partial Class frmSpeedTest
         '
         Me.lstSpeeds.FormattingEnabled = True
         Me.lstSpeeds.ItemHeight = 20
-        Me.lstSpeeds.Location = New System.Drawing.Point(668, 55)
+        Me.lstSpeeds.Location = New System.Drawing.Point(685, 39)
         Me.lstSpeeds.Name = "lstSpeeds"
-        Me.lstSpeeds.Size = New System.Drawing.Size(120, 244)
+        Me.lstSpeeds.Size = New System.Drawing.Size(83, 144)
         Me.lstSpeeds.TabIndex = 2
         '
         'lblAverageSpeed
         '
         Me.lblAverageSpeed.AutoSize = True
         Me.lblAverageSpeed.BackColor = System.Drawing.SystemColors.Window
-        Me.lblAverageSpeed.Location = New System.Drawing.Point(601, 339)
+        Me.lblAverageSpeed.Location = New System.Drawing.Point(486, 339)
         Me.lblAverageSpeed.Name = "lblAverageSpeed"
         Me.lblAverageSpeed.Size = New System.Drawing.Size(91, 20)
         Me.lblAverageSpeed.TabIndex = 4
