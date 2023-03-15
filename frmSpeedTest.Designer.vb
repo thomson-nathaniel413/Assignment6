@@ -26,8 +26,8 @@ Partial Class frmSpeedTest
         Me.lblSpeedTest = New System.Windows.Forms.Label()
         Me.btnEnterSpeed = New System.Windows.Forms.Button()
         Me.lstSpeeds = New System.Windows.Forms.ListBox()
-        Me.lblAverageIndicator = New System.Windows.Forms.Label()
         Me.lblAverageSpeed = New System.Windows.Forms.Label()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblSpeedTest
@@ -61,25 +61,25 @@ Partial Class frmSpeedTest
         Me.lstSpeeds.Size = New System.Drawing.Size(120, 244)
         Me.lstSpeeds.TabIndex = 2
         '
-        'lblAverageIndicator
-        '
-        Me.lblAverageIndicator.AutoSize = True
-        Me.lblAverageIndicator.BackColor = System.Drawing.SystemColors.Window
-        Me.lblAverageIndicator.Location = New System.Drawing.Point(457, 364)
-        Me.lblAverageIndicator.Name = "lblAverageIndicator"
-        Me.lblAverageIndicator.Size = New System.Drawing.Size(183, 20)
-        Me.lblAverageIndicator.TabIndex = 3
-        Me.lblAverageIndicator.Text = "Average Internet Speed:"
-        '
         'lblAverageSpeed
         '
         Me.lblAverageSpeed.AutoSize = True
         Me.lblAverageSpeed.BackColor = System.Drawing.SystemColors.Window
-        Me.lblAverageSpeed.Location = New System.Drawing.Point(688, 364)
+        Me.lblAverageSpeed.Location = New System.Drawing.Point(601, 339)
         Me.lblAverageSpeed.Name = "lblAverageSpeed"
-        Me.lblAverageSpeed.Size = New System.Drawing.Size(61, 20)
+        Me.lblAverageSpeed.Size = New System.Drawing.Size(91, 20)
         Me.lblAverageSpeed.TabIndex = 4
-        Me.lblAverageSpeed.Text = "0 Mbps"
+        Me.lblAverageSpeed.Text = "placeholder"
+        Me.lblAverageSpeed.Visible = False
+        '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(523, 388)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(150, 50)
+        Me.btnClear.TabIndex = 5
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
         '
         'frmSpeedTest
         '
@@ -88,8 +88,8 @@ Partial Class frmSpeedTest
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.lblAverageSpeed)
-        Me.Controls.Add(Me.lblAverageIndicator)
         Me.Controls.Add(Me.lstSpeeds)
         Me.Controls.Add(Me.btnEnterSpeed)
         Me.Controls.Add(Me.lblSpeedTest)
@@ -103,6 +103,6 @@ Partial Class frmSpeedTest
     Friend WithEvents lblSpeedTest As Label
     Friend WithEvents btnEnterSpeed As Button
     Friend WithEvents lstSpeeds As ListBox
-    Friend WithEvents lblAverageIndicator As Label
     Friend WithEvents lblAverageSpeed As Label
+    Friend WithEvents btnClear As Button
 End Class
